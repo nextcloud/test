@@ -1,0 +1,16 @@
+name: Test self hosted runners
+
+on:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: self-hosted
+    timeout-minutes: 10
+
+    steps:
+      - name: Testing
+        run: |
+          whoami
+          df -h
+          sleep 30
