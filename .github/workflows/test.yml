@@ -13,4 +13,4 @@ jobs:
         run: |
           whoami
           df -h
-          sleep 30
+
